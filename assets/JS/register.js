@@ -49,13 +49,12 @@ inputMail.onchange = () => {
 }
 
 inputCfPass.onchange = () => {
-    if (!(inputCfPass.value.length = inputPass.value.length)) {
+    if (!(inputCfPass.value == inputPass.value)) {
         document.getElementById("sub-info__cfpass").innerHTML = `<div style ="color:red">Mật khẩu xác nhận không đúng</div>`
     } else {
         isCheckPass = true;
         document.getElementById("sub-info__cfpass").innerHTML = `<div style ="color:green">Mật khẩu xác nhận đúng</div>`
     }
-
 }
 
 btn.addEventListener("click", () => {
